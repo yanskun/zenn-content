@@ -2,7 +2,7 @@
 title: "ぬるぬる開閉する Table Row を作った"
 emoji: "🪗"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["React", "Material-UI", "mui", "style"]
+topics: ["React", "MaterialUI", "mui", "style"]
 published: true
 ---
 
