@@ -54,6 +54,7 @@ Material UI の Transitions Utils の Collapse を使ってみる
 
 作るに当たって、注意した点
 
+- Table の DOM 構造を崩さないように Cell のなかで Collapse を呼んだ
 - TableCell にくっついてる top と bottom の padding を無効にした
   - 閉じた時に余白が生まれてしまう
 - `display: none;` は使わない。
