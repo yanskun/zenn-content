@@ -1,0 +1,24 @@
+{
+  "name": "zenn-content",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/yasudanaoya/zenn-content.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yasudanaoya/zenn-content/issues"
+  },
+  "homepage": "https://github.com/yasudanaoya/zenn-content#readme",
+  "dependencies": {
+    "zenn-cli": "^0.1.125"
+  }
+}
