@@ -6,6 +6,28 @@ topics: ["GitHub", "GitHubCLI", "Go"]
 published: true
 ---
 
+こんなことができるものを作ります
+
+```bash
+$ gh langs octocat
+
++------------+---------+
+| LANGUAGE   |   LINES |
++------------+---------+
+| Ruby       | 204,865 |
+| CSS        |  14,950 |
+| HTML       |   4,338 |
+| Shell      |     910 |
+| JavaScript |      48 |
++------------+---------+
+| TOTAL      | 225,111 |
++------------+---------+
+https:github.com/octocat has 8 repositories
+Last updated after 2023-07-26
+```
+
+## はじめに
+
 複数のプロジェクトが organization に紐付いていて、  
 EM とかをやっていると人事から「あれ？うちってなんの言語使ってるんだっけ？」って頻繁に聞かれます。  
 採用資料とかを作ってもらったり、開発に関する説明をしてもらったり
