@@ -147,8 +147,11 @@ func getLanguages(client *api.RESTClient, data []github.Repository) (LanguagesLi
 	return results, nil
 }
 
+```
+
 取得した Repository の言語情報をマージしていく
 
+```go
 func sumLanguages(list LanguagesList) Languages {
 	results := Languages{}
 
