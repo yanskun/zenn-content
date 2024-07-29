@@ -27,7 +27,7 @@ Repository のページに行くと、その Repository で使われてる言語
 
 ### Project 作成
 
-[公式](https://docs.github.com/ja/github-cli/github-cli/creating-github-cli-extensions) の手順に乗っ取って
+[公式](https://docs.github.com/ja/github-cli/github-cli/creating-github-cli-extensions) の手順
 
 ```bash
 gh extension create --precompiled=go gh-langs
