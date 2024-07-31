@@ -167,3 +167,9 @@ sheldon を入れる前は、そもそも zsh plugin を入れるのが面倒く
 
 他にも探してみたり、なければ作ってみたりもしたいので、    
 たくさんターミナルを触らなきゃなと思います。
+
+## Link
+
+- https://github.com/yanskun/dotfiles/blob/main/.config/sheldon/plugins.toml
+- https://github.com/yanskun/dotfiles/blob/main/zsh/.zshrc
+- https://github.com/yanskun/dotfiles/blob/main/.config/zsh-abbr/user-abbreviations
