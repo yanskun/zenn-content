@@ -1,5 +1,5 @@
 ---
-title: "Shell Plugin Manager `Sheldon` と、入れて嬉しい Zsh Plugin"
+title: "Sheldon と、入れて嬉しい Zsh Plugin"
 emoji: "🐚"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["Zsh", "Sheldon", "shell", "abbreviation"]
