@@ -147,14 +147,3 @@ Stringリテラルで history.push をすると、
 nuqs のような素晴らしい汎用的なものを先につくりたかったな。と悔しい気持ちになりました。  
 
 感謝しながら使います。
-
-### 余談
-
-nuqs の発音や、意味について記載がありました。
-https://nuqs.47ng.com/docs/about
-
-> I realised after the fact that the word nuqs is Urdu for “flaw” or “defect”. It’s a good reminder that:
-
-nuqs はヒンドゥー語で、「欠陥」などの意味を持つそうで、  
-命名する前に最初に調べておけばよかった。とのことです。  
-ウケる
