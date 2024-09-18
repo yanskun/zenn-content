@@ -6,6 +6,12 @@ topics: ["githubactions", "slack"]
 published: true
 ---
 
+## 作成したもの
+https://github.com/marketplace/actions/yanskun-slack-file-upload-action
+
+channel_id とファイルパスを渡すと
+Slack チャンネルに対象のファイルをアップロードする action を生成しました。
+
 ## 作成背景
 
 [files.upload API](https://api.slack.com/methods/files.upload) が deprecated になってしまいました。
