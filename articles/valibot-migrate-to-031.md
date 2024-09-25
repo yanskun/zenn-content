@@ -16,7 +16,13 @@ published: true
 https://github.com/fabian-hiller/valibot
 
 :::message
-本記事で、以下についての記載しません。
+本記事で話すこと
+- Migration Command で対応してくれるところ
+- 手動で対応しなければならないところ
+:::
+
+:::message alert
+話さないこと
 - Valibot の説明
 - Valibot の採用理由
 :::
@@ -34,7 +40,7 @@ Migration コマンドを実行すればすぐ終わるよ。
 （実際は、今後私が v0.31.0 への対応をすることはないのですが。）
 
 
-### Automatic upgraded
+### Automatic Migration
 
 Guide にもある通り
 
@@ -66,12 +72,13 @@ type FormInput = Input<typeof FormSchema>
 
 を Migration した際に、一部
 
-```ts
+```diff ts
 const FormSchema = v.object({
     name: v.string(),
     age: v.number(),
 })
-type InferInput = InferInput<typeof FormSchema>
+- type FormInput = Input<typeof FormSchema>
++ type InferInput = InferInput<typeof FormSchema>
 ```
 
 となってしまったケースが何件かあった。  
@@ -83,12 +90,9 @@ type InferInput = InferInput<typeof FormSchema>
 
 他には
 
-```ts
-// before
-v.number([minValue(10, '10以上にして'), '数字にして'])
-
-// after
-v.pipe(v.number('数字にして'), v.minValue('10以上にして'))
+```diff ts
+- v.number([minValue(10, '10以上にして'), '数字にして'])
++ v.pipe(v.number('数字にして'), v.minValue('10以上にして'))
 ```
  
 この変更は、ErrorMessage がどこにあたっているのか？というのが直感的になったように感じます。
@@ -105,15 +109,12 @@ v.pipe(v.number('数字にして'), v.minValue('10以上にして'))
 
 Migration ガイドにもある通り、
 
-```ts
-// before
-const TransformedSchema = v.transform(v.string(), (input) => input.length);
-
-// after
-const TransformedSchema = v.pipe(
-  v.string(),
-  v.transform((input) => input.length)
-);
+```diff ts
+- const TransformedSchema = v.transform(v.string(), (input) => input.length);
++ const TransformedSchema = v.pipe(
++   v.string(),
++   v.transform((input) => input.length)
++ );
 ```
 
 これもかなりよみやすく、書きやすくった印象です。  
@@ -137,22 +138,18 @@ Component から修正をしても良いのだが、
 
 そこでは、以下のように対応した  
 
-```ts
-// before
-v.coerce(
-  v.number(),
-  (input) => Number(input)
-)
-
-// after
-v.pipe(
-  v.union([v.number(), v.string()]),
-  transfer((input) => Number(input))
-)
+```diff ts
+- v.coerce(
+-   v.number(),
+-   (input) => Number(input)
+- );
++ v.pipe(
++   v.union([v.number(), v.string()]),
++   transfer((input) => Number(input))
++ );
 ```
 
 確かに、入力される型がわからないなんてことは基本的にないなあ。と思いながら対応した。  
-（TODO アノテーションを記載済み）
 
 ## 所管
 
