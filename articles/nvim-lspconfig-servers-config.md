@@ -1,5 +1,5 @@
 ---
-title: "nvim-lspconfig の LSP 周りの config が綺麗にまとまった"
+title: "nvim-lspconfig の config が綺麗にまとまった"
 emoji: "🦉"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["neovim", "lsp"]
