@@ -1,5 +1,5 @@
 ---
-title: "nvim-lspconfig の LSP の config のディレクトリ構成が綺麗にまとまった"
+title: "nvim-lspconfig の LSP 周りの config が綺麗にまとまった"
 emoji: "🦉"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["neovim", "lsp"]
@@ -13,7 +13,7 @@ https://github.com/neovim/nvim-lspconfig
 
 のだが、なかなか快適になるまでとても苦労する。
 
-## 前提
+## ディレクトリ構成
 
 ざっくり以下のような dotfiles になっている。
 
@@ -27,19 +27,7 @@ https://github.com/neovim/nvim-lspconfig
 │   ├── default.lua
 │   ├── denols.lua
 │   ├── gopls.lua
-│   ├── jsonls.lua
-│   ├── lua_ls.lua
-│   ├── pylsp.lua
-│   ├── ruby_lsp.lua
-│   ├── rust_analyzer.lua
-│   ├── sqlls.lua
-│   ├── svelte.lua
-│   ├── tailwindcss.lua
-│   ├── tflint.lua
-│   ├── ts_ls.lua
-│   ├── volar.lua
-│   ├── yamlls.lua
-│   └── zls.lua
+|   ...
 ├── plugins
 │   ├── lspconfig.lua
 ```
@@ -73,19 +61,7 @@ local servers = {
   "cssls",
   "denols",
   "gopls",
-  "jsonls",
-  "lua_ls",
-  "pylsp",
-  "ruby_lsp",
-  "rust_analyzer",
-  "sqlls",
-  "svelte",
-  "tailwindcss",
-  "tflint",
-  "ts_ls",
-  "volar",
-  "yamlls",
-  "zls",
+  ...
 }
 
 for _, lsp in ipairs(servers) do
@@ -191,24 +167,6 @@ return M
 こんなものまで用意していた。これをコピーして使い回すのである。  
 9割内容が同じファイルがいくつも増える状態であった。
 
-```lua:.config/vim/lua/lsp/_template.lua
-if vim.fn.exepath('lsp_name') ~= '' then
-  local lspconfig = require('lspconfig')
-  local util = require('libraries._set_lsp')
-
-  lspconfig.template.setup {
-    on_attach = util.on_attach,
-    capabilities = util.capabilities,
-    flags = util.flags,
-  }
-else
-  vim.notify(
-    'lsp install command',
-    vim.log.levels.WARN,
-    { title = 'servername' }
-  )
-end
-```
 https://github.com/yanskun/dotfiles/blob/main/.config/vim/lua/lsp/_template.lua
 
 Neovim のファイル構成に悩んでいる方に一助できれば幸いです。
