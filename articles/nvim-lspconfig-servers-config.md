@@ -173,4 +173,4 @@ Neovim のファイル構成に悩んでいる方に一助できれば幸いで�
 
 ### 成果物
 
-- https://github.com/yanskun/dotfiles/blob/main/.config/vim/lua/plugins/lspconfig.lua
+https://github.com/yanskun/dotfiles/blob/main/.config/vim/lua/plugins/lspconfig.lua
