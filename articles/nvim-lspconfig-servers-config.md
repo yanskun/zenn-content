@@ -121,6 +121,7 @@ return default_config
 local M = {}
 
 local fmt = string.format
+local default_config = require("lsp.default")
 
 function M.conf_lsp(name)
   local ok, _ = pcall(require, fmt('lsp.%s', name))
