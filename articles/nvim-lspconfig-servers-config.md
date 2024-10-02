@@ -95,18 +95,8 @@ local servers = {
   -- 略
 }
 
--- vim config があるファイルパスを拾ってくる
-local config_path = vim.fn.stdpath("config")
-
 for _, lsp in ipairs(servers) do
-  -- config_path から、lsp のファイルがあるところまでのパスを定義してあげる。
-  -- 注意すべきは、拡張子が必要なところ
-  local lsp_file = config_path .. "/lua/lsp/" .. lsp .. ".lua"
-  if utils.file_exists(lsp_file) then
-    conf_lsp(lsp)
-  else
-    default_config(lsp)
-  end
+  conf_lsp(lsp)
 end
 ```
 
@@ -133,17 +123,10 @@ local M = {}
 local fmt = string.format
 
 function M.conf_lsp(name)
-  return require(fmt('lsp.%s', name))
-end
+  local ok, _ = pcall(require, fmt('lsp.%s', name))
 
--- Copilot とかに聞けばすぐに出てくる
-function M.file_exists(name)
-  local f = io.open(name, 'r')
-  if f ~= nil then
-    io.close(f)
-    return true
-  else
-    return false
+  if not ok then
+    default_config(name)
   end
 end
 
@@ -167,10 +150,10 @@ return M
 こんなものまで用意していた。これをコピーして使い回すのである。  
 9割内容が同じファイルがいくつも増える状態であった。
 
-https://github.com/yanskun/dotfiles/blob/main/.config/vim/lua/lsp/_template.lua
+https://github.com/yanskun/dotfiles/blob/d028251c96156dd6772819ec96c5f88a448f1de9/.config/vim/lua/lsp/_template.lua
 
 Neovim のファイル構成に悩んでいる方に一助できれば幸いです。
 
 ### 成果物
 
-https://github.com/yanskun/dotfiles/blob/main/.config/vim/lua/plugins/lspconfig.lua
+https://github.com/yanskun/dotfiles/blob/d028251c96156dd6772819ec96c5f88a448f1de9/.config/vim/lua/plugins/lspconfig.lua
