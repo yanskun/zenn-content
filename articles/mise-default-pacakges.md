@@ -1,5 +1,5 @@
 ---
-title: "mise install した際に、一緒にライブラリをインストールする"
+title: "mise install した際に、一緒にパッケージをインストールする"
 emoji: "🤹"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["mise", "versionManager", "dotfiles"]
