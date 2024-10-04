@@ -81,16 +81,9 @@ https://mise.jdx.dev/lang/node.html#default-node-packages
 
 そして、 dotfile の root で管理している shell に以下を追加
 
-```shell
-echo 'mise'
-find "${PWD}"/mise -type f -name ".default-*" | while read file; do
-  filename=$(basename "$file")
+https://github.com/yanskun/dotfiles/blob/424b1359a65678f479a1bd7fde46cb76ec49433c/dotfile.sh#L60-L64
 
-  ln -sf "$file" "$HOME/$filename"
-done
-```
-
-これで、ドキュメントの通り、 `${HOME}` 配下に配置できました。
+これで、ドキュメントの通り、 `${HOME}` 配下に配置
 
 ### 例
 
@@ -131,4 +124,10 @@ python-lsp-server
 LSP 周りがかなり多いですね。  
 というかほとんどそれのために欲しかったと言っても過言ではない。  
 
+新しいバージョンをインストールするたびに、いくつかのパッケージをインストールするので  
+多少時間はかかりますが、ないって言われて怒られるよりずっとマシです。  
+それに LSP とかはどうせインストールするものなのでいいのです。  
+
 かなり幸せにになりました。
+
+https://github.com/yanskun/dotfiles/tree/main/mise
