@@ -70,3 +70,11 @@ bind-key P run-shell "tmux popup -d '#{pane_current_path}' -h 50% | exit 0"
 完成したものがこちら。
 
 https://github.com/yanskun/dotfiles/blob/main/tmux/tmux.conf
+
+
+## 最後に
+tmux の `run-shell` を自分で触ったの初めてだったのですが、  
+かなり便利だなって感じました。  
+
+なんでもできそうなので、アイデアが沸いたり、ストレスを感じたら、  
+どんどんカスタマイズしていきたいですね
