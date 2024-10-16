@@ -1,5 +1,5 @@
 ---
-title: "tmux の使い捨てターミナル用の popup 表示"
+title: "tmux popup を気軽に呼び出せるようにした"
 emoji: "🦘"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["tmux"]
