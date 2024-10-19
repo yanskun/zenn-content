@@ -3,7 +3,7 @@ title: "tmux popup を気軽に呼び出せるようにした"
 emoji: "🦘"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["tmux"]
-published: true
+published: false
 ---
 
 ![](/images/tmux-popup-shell/popup.png)
