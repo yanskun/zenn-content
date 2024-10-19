@@ -3,7 +3,7 @@ title: "mise install した際に、一緒にパッケージをインストー�
 emoji: "🤹"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["mise", "versionManager", "dotfiles"]
-published: true
+published: false
 ---
 
 Node や Ruby, Go などのバージョン管理ツールはたくさんあります。  
