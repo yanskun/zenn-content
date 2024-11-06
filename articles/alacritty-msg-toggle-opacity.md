@@ -3,7 +3,7 @@ title: "Alacritty の CLI Command が便利すぎた"
 emoji: "🪟"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ['Alacritty', 'Hammerspoon']
-published: false
+published: true
 ---
 
 ```sh
