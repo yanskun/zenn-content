@@ -1,5 +1,5 @@
 ---
-title: "mise install した際に、一緒にパッケージをインストールする"
+title: "mise install [TOOL] した時に、お気に入りのモジュールたちも自動でインストールしてもらう"
 emoji: "🤹"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["mise", "versionManager", "dotfiles"]
