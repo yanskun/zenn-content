@@ -3,7 +3,7 @@ title: "音楽聞く人におすすめしたい。macOS に Dynamic Island を�
 emoji: "🎧"
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: ["alcove", "spotify"]
-published: false
+published: true
 ---
 
 ## Dynamic Island
