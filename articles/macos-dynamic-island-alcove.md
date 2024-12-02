@@ -2,7 +2,7 @@
 title: "音楽聞く人におすすめしたい。macOS に Dynamic Island を追加する Alcove が気持ち良すぎる"
 emoji: "🎧"
 type: "idea" # tech: 技術記事 / idea: アイデア
-topics: ["alcove", "spotify"]
+topics: ["Alcove", "Spotify"]
 published: true
 ---
 
