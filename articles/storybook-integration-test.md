@@ -3,7 +3,7 @@ title: "Storybook の Test Runner を並列実行して、GitHub Actions の実�
 emoji: "⛄"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ['Test', 'Storybook', 'GitHubAction', 'CICD']
-published: false
+published: true
 ---
 
 **師走** は言葉の通りで、坊主も走り回るほど12月は忙しいです。  
