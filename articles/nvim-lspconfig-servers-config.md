@@ -1,5 +1,5 @@
 ---
-title: "nvim-lspconfig の config が綺麗にまとまった"
+title: "nvim-lspconfig の LSP 毎の設定を、デフォルト/カスタムを柔軟にロードする管理方法"
 emoji: "🦉"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["neovim", "lsp"]
