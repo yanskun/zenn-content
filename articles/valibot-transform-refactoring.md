@@ -3,7 +3,7 @@ title: "ややこしい API Request を Valibot の transoform() で解決する
 emoji: "🦋"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["valibot", "reacthookform", "schema"]
-published: true
+published: false
 ---
 
 前回、Valibot を v0.31 への Migration ができた。
