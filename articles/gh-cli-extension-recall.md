@@ -16,7 +16,7 @@ github.com/pulls とかをみて思い出したりしています。
 
 https://github.com/yanskun/gh-recall
 
-GItHub API や git command を使って、Repository の
+GitHub API や git command を使って、Repository の
 
 - Pull Request
 - Issue
@@ -30,7 +30,7 @@ https://ollama.com/
 
 ### どんなものか
 
-僕の dotfiles で実行してみると、
+僕の dotfiles 配下で実行してみると、
 
 ```shell
 -❯ gh recall -l ja
@@ -79,12 +79,12 @@ Go の Project が出来上がるので、
 
 ```
 
-| package | やること                                    |
-| ------- | ------------------------------------------- |
-| main    | option を処理                               |
-| git     | GitHub API へのリクエスト                   |
-| ollama  | Prompt や Local の Ollam API へのリクエスト |
-| config  | `config.toml` の読み込み                    |
+| package | やること                                     |
+| ------- | -------------------------------------------- |
+| main    | option を処理                                |
+| git     | GitHub API へのリクエスト                    |
+| ollama  | Prompt や Local の Ollama API へのリクエスト |
+| config  | `config.toml` の読み込み                     |
 
 ### git
 
@@ -191,8 +191,8 @@ https://github.com/briandowns/spinner
 
 ## 終わり
 
-僕も LLM を使った「何か」を作ってみたかったのですが、
-アイデアが浮かばず、ちょうどいいのが閃いてよかったです。
+も LLM を使った「何か」を作ってみたかったのですが、アイデアが浮かばずにいました。
+今回ちょうどいいアイデアが閃いたので、作れてよかったです。
 
 こういった、煩雑なものは LLM も活用して解決していきたいし、
 今 prompt としっかり向き合わないと、かなり機を逃している感じもするので、
