@@ -3,7 +3,7 @@ title: "GitHub API x Ollama で、自分が先週何やったかを思い出し�
 emoji: "🗯️"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["ollama", "githubcli", "go"]
-published: false
+published: true
 ---
 
 週の初めに、先週自分が何やったか？を思い出すのに時間がかかったりします。
