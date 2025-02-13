@@ -14,17 +14,19 @@ source ${ZDOTDIR}/submodules/zsh-autosuggestions/zsh-autosuggestions.zsh
 ```
 
 カッコつけた結果  
-意味がわからないなって個人的に思いました。 
+意味がわからないなって個人的に思いました。
 
 ## Sheldon
 
 追加するたびに、submodule コマンドを実行して、 `.zshrc` にパスを追加する。  
 という作業は二重管理してる感じも流石に辛いということで Plugin Manager を探すことにしました
 
-こういう時、まずは awesome でみます。   
+こういう時、まずは awesome でみます。  
 https://github.com/unixorn/awesome-zsh-plugins
 
 ということで、 [sheldon](https://github.com/rossmacarthur/sheldon) にしました。
+
+https://github.com/rossmacarthur/sheldon
 
 選定理由は、Rust で書かれていたから。  
 早そうですよね、あとかっこいいから人に勧めやすい。
@@ -49,6 +51,7 @@ https://github.com/yanskun/dotfiles/commit/d690df1d2b03ab92086f4f6399e0e8d2f293d
 当時のコミット
 
 ## Plugin
+
 簡単に Plugin が入れれるようになったので、他の Plugin も入れてみたくなりました。
 
 ### zsh-autosuggestions
@@ -58,7 +61,6 @@ https://github.com/zsh-users/zsh-autosuggestions
 これはすでに入れていたもの
 
 history をベースに入力コマンドのサジェストをしてくれる
-
 
 ### zsh-syntax-highlighting
 
@@ -105,7 +107,7 @@ $ docker compose
 history に元のコマンドが貯まるようになる
 
 僕は元々、入力と実行結果を見比べて、  
-結局何入力したのかわかんなくなる。という点で alias をあんまり設定していなかったのだが、  
+結局何入力したのかわかんなくなる。という点で alias をあんまり設定していなかったのだが、
 
 実行時に alias の中身を展開してくれるのであれば、そこはクリアされる。
 
@@ -113,10 +115,9 @@ history に元のコマンドが貯まるようになる
 
 suggest されるコマンドが、正しい形になっている。
 
-
 #### history が汚れないメリット
 
-history を使って、コマンドを実行することはザラにある  
+history を使って、コマンドを実行することはザラにある
 
 私は、 fzf を使って history を検索したりして、  
 ~~よくわからない、覚える気にもなれない~~ サーバーとの接続コマンドなんかを叩いている。
@@ -136,12 +137,11 @@ zle -N fzf-history-selection
 bindkey '^H' fzf-history-selection
 ```
 
-`fzf-tmux` をすると、tmux のpopup を使って、fzf を表示することができる。  
-tmux が起動してなければ、普通に fzf として走る優れもの。（地味に嬉しい）  
+`fzf-tmux` をすると、tmux の popup を使って、fzf を表示することができる。  
+tmux が起動してなければ、普通に fzf として走る優れもの。（地味に嬉しい）
 
 これで、history から実行コマンドを探すときに、  
-元のコマンドで探すことができるようにもしています。  
-
+元のコマンドで探すことができるようにもしています。
 
 ただし  
 **alias したコマンドを history から元の実行コマンドで検索して実行することはないです。**  
@@ -154,18 +154,18 @@ zsh-abbr は(僕の例では) `dc` って入力したら `docker compose` と展
 `dc` って入力すると、 `docker compose` と入力されるのです。  
 alias と違い、プロンプトに表示されるんです。
 
-僕はちょっとしかタイプしてないのに、たくさん入力してくれるんです。  
+僕はちょっとしかタイプしてないのに、たくさん入力してくれるんです。
 
 気分が良いですね。
 
 ## 最後に
 
 sheldon を入れる前は、そもそも zsh plugin を入れるのが面倒くさくて、そもそも探しもしてなかったのですが、  
-設定も楽だし、多分早いし、で嬉しいです。  
+設定も楽だし、多分早いし、で嬉しいです。
 
-また、plugin を探すようになったおかげで、いろんな素晴らしい plugin と出会うことができました。  
+また、plugin を探すようになったおかげで、いろんな素晴らしい plugin と出会うことができました。
 
-他にも探してみたり、なければ作ってみたりもしたいので、    
+他にも探してみたり、なければ作ってみたりもしたいので、  
 たくさんターミナルを触らなきゃなと思います。
 
 ## Link
